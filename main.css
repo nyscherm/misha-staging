@@ -1,0 +1,280 @@
+body {
+	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+span {
+	background-color: grey;
+}
+header {
+	position: fixed;
+	margin: 0;
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	opacity: .9;
+}
+header.index {
+	background-color: #000;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+header.index a {
+	color: #fff;
+}
+header div {
+	padding: 5px 20px;
+}
+footer {
+	/*position: fixed;
+	bottom: 0;*/
+	padding: 50px 25px 20px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	-webkit-transition-duration: .4s; /* Safari */
+    transition-duration: .4s;
+}
+.left-align {
+	display: inline-block;
+}
+.right-align {
+	display: inline-block;
+	margin: 0 0 0 auto;
+}
+.right-align a {
+	padding: 0 5px;
+}
+.right-align a:hover {
+	color: grey;
+	cursor: pointer;
+}
+#main {
+	padding-top: 120px;
+	text-align: center;
+	min-height: 400px;
+}
+.main-image {
+	background-image: url("images/methuselah-3.jpg");
+	text-shadow: 1px 2px 2px #000;
+	color: #fff;
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+}
+.main-image .text {
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-color: rgba(0,0,0,0.4);
+    background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.4));
+    background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.4));
+    background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.4));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4));
+}
+.main-image p {
+	padding: 0 20px;
+}
+#methuselah-img {
+	background-image: url("images/methuselah.jpg");
+	background-size: cover;
+	height: 600px;
+}
+#serpent-img {
+	background-image: url("images/dancing-serpent.jpg");
+	background-size: cover;
+	height: 600px;
+}
+#science-img {
+	background-image: url("images/science.jpeg");
+	background-size: cover;
+	height: 600px;
+}
+#west-street {
+	background-image: url("images/30w.jpg");
+	background-size: cover;
+	height: 600px;
+}
+.content {
+	padding: 0 75px;
+}
+.main-image h1:after, .content h1:after {
+	content: "";
+    display: block;
+	width: 76px;
+    height: 3px;
+    margin: 15px auto 5px;
+}
+.main-image h1:after {
+	background-color: rgba(255, 255, 255, .7);
+}
+.content h1:after {
+    background-color: rgba(0, 0, 0, .7);
+}
+.content p {
+	text-align: left;
+}
+.gallery {
+	display: flex;
+    padding-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 50px;
+}
+.gallery .item.image {
+	width: 200px;
+	height: 200px;
+}
+.gallery .item.image:hover {
+	cursor: pointer;
+}
+.gallery .item {
+	width: 275px;
+	height: 275px;
+	margin: 5px;
+	border-radius: 4px; 
+	background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+}
+.gallery .item div {
+	width: 275px;
+	height: 275px;
+    border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	text-shadow: none;
+    font-size: 16px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	-webkit-transition-duration: .7s; /* Safari */
+    transition-duration: .7s;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+}
+.gallery .item div:hover {
+	opacity: .8;
+	color: #fff;
+	text-shadow: 1px 2px 2px #000;
+}
+.gallery .item div .title {
+	font-weight: bold;
+	font-size: 24px;
+	width: 80%;
+	margin: 0;
+}
+.gallery .item div .title:after {
+	content: "";
+    display: block;
+	width: 28px;
+    height: 3px;
+    margin: 15px auto 5px;
+    background-color: rgba(255, 255, 255, .7);
+}
+.gallery .item div p {
+    margin: 0 10px;
+}
+.gallery .img-1 {
+	background-image: url("images/gallery-1.jpg");
+}
+.gallery .img-2 {
+	background-image: url("images/gallery-2.jpeg");
+}
+.gallery .img-3 {
+	background-image: url("images/gallery-3.jpg");
+}
+.gallery .img-4 {
+	background-image: url("images/gallery-4.jpg");
+}
+.modal {
+	position: fixed;
+	visibility: hidden;
+	top: 120px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	-webkit-transition-duration: .2s; /* Safari */
+    transition-duration: .2s;
+}
+.modal .image {
+	width: 80%;
+	height: 75%;
+	margin: 0 auto;
+	opacity: 0;
+	background-image: url("images/methuselah-4.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+    background-position: center;
+	-webkit-transition: opacity .7s; /* Safari */
+    transition: opacity .7s;
+}
+
+@media (max-width: 740px) {
+	header .left-align, header .right-align {
+		/* display: block; */
+		width: 100%;
+		margin: 0;
+		padding: 10px 15px;
+	}
+	header .right-align {
+		padding-left: 0;
+	}
+	header .right-align a:hover {
+		text-decoration: underline;
+	}
+	header .right-align a, footer .right-align a {
+		display: block;
+		text-align: right;
+		padding-right: 0;
+		padding-bottom: 4px;
+	}
+	#main {
+		padding-top: 140px;
+	}
+	.main-image {
+		height: 600px;
+	}
+	.content {
+	    padding: 0 50px;
+	}
+	footer {
+		font-size: 14px;
+		padding: 50px 15px 20px;
+	}
+	.gallery {
+		margin: 0;
+	}
+	.gallery .item, .gallery .item.image {
+		width: 80%;
+		height: 250px;
+	}
+	.gallery .item div {
+		width: 100%;
+		height: 250px;
+	}
+	/*
+	.gallery .item div {
+		padding-top: 200px;
+	    opacity: 1;
+	    background-color: transparent;
+	    color: #000;
+	    text-shadow: none;
+	    z-index: -1;
+	}
+	*/
+	.modal {
+		margin: 15px auto;
+		top: 116px;
+	}
+}
