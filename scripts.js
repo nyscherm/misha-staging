@@ -52,7 +52,7 @@ $(document).ready(function() {
 		galleryID = $this.attr('id');
 		$this.find($('.image')).each(function(){
 			console.log($(this));
-			imgUrl = 'url("images/'+galleryID+'-'+count+'.JPG")';
+			imgUrl = 'url("images/'+galleryID+'-'+count+'.jpg")';
 			$(this).css('background-image', imgUrl);
 			count++;
 		});
