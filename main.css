@@ -186,31 +186,31 @@ a {
     margin: 0 10px;
 }
 .gallery .img-1 {
-	background-image: url("images/gallery-1.jpg");
+	background-image: url("images/watercolor-1.jpg");
 }
 .gallery .img-2 {
-	background-image: url("images/gallery-2.jpg");
+	background-image: url("images/watercolor-2.jpg");
 }
 .gallery .img-3 {
-	background-image: url("images/gallery-3.jpg");
+	background-image: url("images/watercolor-3.jpg");
 }
 .gallery .img-4 {
-	background-image: url("images/gallery-4.jpg");
+	background-image: url("images/watercolor-4.jpg");
 }
 .gallery .img-5 {
-	background-image: url("images/gallery-5.jpg");
+	background-image: url("images/watercolor-5.jpg");
 }
 .gallery .img-6 {
-	background-image: url("images/gallery-6.jpg");
+	background-image: url("images/watercolor-6.jpg");
 }
 .gallery .img-7 {
-	background-image: url("images/gallery-7.jpg");
+	background-image: url("images/watercolor-7.jpg");
 }
 .gallery .img-8 {
-	background-image: url("images/gallery-8.jpg");
+	background-image: url("images/watercolor-8.jpg");
 }
 .gallery .img-9 {
-	background-image: url("images/gallery-9.jpg");
+	background-image: url("images/watercolor-9.jpg");
 }
 .modal {
 	position: fixed;
