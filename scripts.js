@@ -4,12 +4,20 @@ $(document).ready(function() {
 	var $this = null;
 	var count = 1;
 
-	$('.image').click(function() {
+	const viewModal = (img) => {
 		$('.modal').css('visibility','visible');
 		console.log("click");
-		imgUrl = $(this).css('background-image');
+		imgUrl = $(img).css('background-image');
 		$('.modal .image').css('background-image', imgUrl);
 		$('.modal .image').css('opacity', '1');
+	};
+
+	$('.image').click(function() {
+		viewModal(this);
+	});
+
+	$('.gallery .item').click(function() {
+		viewModal(this);
 	});
 
 	$('.modal').click(function() {
@@ -38,13 +46,13 @@ $(document).ready(function() {
 
 	$('header').append(headerContent);
 	$('footer').append(footerContent);	
-
+	
 	$('.gallery').each(function(){
 		$this = $(this);
 		galleryID = $this.attr('id');
 		$this.find($('.image')).each(function(){
 			console.log($(this));
-			imgUrl = 'url("images/'+galleryID+'-'+count+'.jpg")';
+			imgUrl = 'url("images/'+galleryID+'-'+count+'.JPG")';
 			$(this).css('background-image', imgUrl);
 			count++;
 		});
